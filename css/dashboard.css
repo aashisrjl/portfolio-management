@@ -1,0 +1,166 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../img/pat.jpg') ;
+    background-size:cover;
+    background-position: center; 
+}
+
+header{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 90%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20%;
+
+}
+.logo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    color:aqua;
+    user-select: none;
+    transition: 2s;
+    box-shadow: #162938 30px 20px 10px;
+    
+}
+.logo:hover{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: aqua;
+    text-shadow: #162938 30px 20px 10px 0px;
+    font-size:1.7em ;    
+
+}
+
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px;
+}
+.navigation a:hover{
+    color: aquamarine;
+}
+.navigation a::after{
+    content:'' ;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+
+}
+
+.circle-image {
+        border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: rgb(128, 128, 128) 5px 5px 10px 5px;
+  }
+ 
+  .circle-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+  }
+  .circle-image img:hover{
+    transform: scale(1.2);
+  }
+  .intro{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .intro p{
+    margin-left: 100px;
+    font-weight: bolder;
+
+  }
+  .intro #stu{
+    color: red;
+
+  }
+  .intro h3{
+    margin-left: 40px;
+
+  }
+  .intro #btn{
+    margin-left: 100px;
+    background-color: green;
+    border: 5px black;
+    padding: 5px 10px 5px 10px ;
+    border-radius: 5px;
+    margin-top: 2%;
+
+  }
+  .icons a{
+        position: relative;
+        font-size: 1.3em;
+        color:blue;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 30px;
+        margin-top: 30px;
+        transition: 0.5s;
+    }
+    .icons a:hover{
+        transform: scale(1.2);
+    }
+
+    .card{
+      width: 25em;
+      background: transparent;
+    }
+    .card-title{
+      margin-left: 20px;
+      padding-top: 10px;
+    }
+
+    .skill{
+      color: white;
+      width: 70%;
+      backdrop-filter: blur(5px);
+      padding: 10px;
+    }
+    .table{
+      color: white;
+      text-decoration-color: #fff;
+      padding: 10px;
+      backdrop-filter: blur(10px);
+    }
+    .table thead,tbody,h3{
+      color: #fff;
+      padding: 10px;
+    }
+    .table table{
+      text-align: center;
+      border-spacing: 5px;
+
+    }
+    .col{
+      margin-top: 200px !important;
+    }
+  
+
+
