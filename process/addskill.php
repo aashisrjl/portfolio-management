@@ -1,8 +1,10 @@
 <?php 
 require_once('../db/connection.php');
     if($_SERVER['REQUEST_METHOD']=="POST"){
-        if(isset($_POST['skill'])){
+        if(isset($_POST['skill']) ){
+           
             $skill=$_POST['skill'];
+
             session_start();
             $id=$_SESSION['id'];
             $query="INSERT INTO skills(skill_title,user_id) VALUES('$skill','$id')";

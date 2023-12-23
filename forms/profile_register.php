@@ -1,7 +1,7 @@
 <?php 
 include('../db/connection.php');
 session_start();
-$id=$_SESSION["id"];
+$id=$_SESSION['id'];
 $query= "SELECT * FROM profile where user_id='$id' ";
 $result = mysqli_query($conn,$query);
 if(mysqli_num_rows($result)==1)

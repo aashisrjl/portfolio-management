@@ -18,6 +18,9 @@ require_once('../db/connection.php');
                 $msg="saved";
             }else{
                 $errmsg="error occured";
+                if(!$conn){
+                    $errmsg="conn error";
+                }
             }
 
         }else{
